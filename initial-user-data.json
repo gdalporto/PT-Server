@@ -1,0 +1,49 @@
+{
+    "id": "0",
+    "userName": "jimbob",
+    "password": "Hello12345",
+    "condition": "Lower Back",
+    "treatments": ["Crunches", "Leg Lifts", "Shoulder Rolls"],
+    "log": [{
+        "2019-01-15": {
+            "Leg Lifts": "complete", 
+            "Crunches": "incomplete"
+            }
+        },
+        {"2019-03-14": {
+            "Crunches": "complete",
+            "Leg Lifts": "incomplete"
+            }
+        }
+    ]
+}
+{
+    "id": "1",
+    "userName": "suelynn",
+    "password": "Hello12345",
+    "condition": "Upper Back",
+    "treatments": ["Shoulder Rolls", "Leg Lifts"],
+    "log": [{
+        "2019-01-15": {
+            "Leg Lifts": "complete", 
+            "Crunches": "incomplete"
+            }
+        },
+        {"2019-03-13": {
+            "Crunches": "complete",
+            "Leg Lifts": "incomplete"
+            }
+        }
+    ]
+
+
+}
+{
+    "id": "2",
+    "userName": "blob",
+    "password": "Hello12345",
+    "condition": "Shoulder",
+    "treatments": ["Shoulder Rolls"],
+    "log": []
+}
+

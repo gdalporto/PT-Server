@@ -1,0 +1,4 @@
+{ "_id" : ObjectId("59074c7c057aaffaafb0da64"),"userName":"JDoe","firstName":"John", "lastName":"Doe", "email":true}
+{ "_id" : ObjectId("59074c7c057aaffaafb0da6d"),"userName":"JDoe","firstName":"Jane", "lastName":"Smith", "email":true}
+{ "_id" : ObjectId("59074c7c057aaffaafb0da60"),"userName":"JDoe","firstName":"Helen", "lastName":"Ross", "email":true}
+{ "_id" : ObjectId("59074c7c057aaffaafb0da5a"),"userName":"JDoe","firstName":"Bob", "lastName":"Dole", "email":true}
