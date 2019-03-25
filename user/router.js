@@ -146,7 +146,7 @@ router.post('/updatelog', jsonParser, (req, res) => {
   
   return User.update({'username':username}, {'log':log})
   .then(user => {
-    return res.status(201).json(user.serialize());
+    return res.status(201).json(user);
   })
   .catch(err => {
     console.error(err);
