@@ -127,5 +127,45 @@ router.post('/', jsonParser, (req, res) => {
     });
 });
 
+// Post updated logs to existing user
+router.post('/updatelog', jsonParser, (req, res) => {
+  console.log("STARTING SERVER UPDATELOG: fields submitted:", req.body);
+  const requiredFields = ['username', 'log'];
+  const missingField = requiredFields.find(field => !(field in req.body));
+
+  if (missingField) {
+    return res.status(422).json({
+      code: 422,
+      reason: 'ValidationError',
+      message: 'Missing field',
+      location: missingField
+    });
+  }
+
+  let {username, log} = req.body;
+  
+  return User.update({'username':username}, {'log':log})
+  .then(user => {
+    return res.status(201).json(user.serialize());
+  })
+  .catch(err => {
+    console.error(err);
+    if (err.reason === 'ValidationError') {
+      return res.status(err.code).json(err);
+    }
+    res.status(500).json({code: 500, message: 'Internal server error'});
+  });
+});
+
+
+
+
+
+
+
+
+
+
+
 
 module.exports = {router};
