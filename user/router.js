@@ -130,6 +130,7 @@ router.post('/', jsonParser, (req, res) => {
 // Post updated logs to existing user
 router.post('/updatelog', jsonParser, (req, res) => {
   console.log("STARTING SERVER UPDATELOG: fields submitted:", req.body);
+  console.log("LOG IS", req.body.log);
   const requiredFields = ['username', 'log'];
   const missingField = requiredFields.find(field => !(field in req.body));
 
