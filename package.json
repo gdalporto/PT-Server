@@ -1,7 +1,7 @@
 {
-  "name": "mlc",
+  "name": "PT",
   "version": "1.0.0",
-  "description": "MLC Band Page",
+  "description": "PT Server",
   "main": "server.js",
   "dependencies": {
     "bcryptjs": "^2.4.0",
