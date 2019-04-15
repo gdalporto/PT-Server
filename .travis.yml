@@ -4,6 +4,6 @@ deploy:
   provider: heroku
   api_key:
     secure: QlslwuFcdOa7JdC7XsKJNbivUIb0PAfouaTR2RHc2zIAmESENRRwxFGSriy092w3hjhZ22j4NoquPaaJYklTq4q/Qf2HR1yKOhZT6b8HJnwc/zmGoGBKz1DteeBzFPHvR2KvTeJ9vOgdQayvmF1DGU4JBLSQn+eB1+b2Ax6+Od4zd0JcLIetVi9JOBxsu8aplSUdVCmqhOcV1gwvTKqWdu0m+91wyED3mqfKKRtC/FS99r8c+BSItx1f0YawwbJ6lf33gDPcZAaiqb8NOCHOEW/KBhtg268c0DgGbrRdJUqTiuYUS0sfnD/V1rtOCtafDyDvtJolhQvxxB5OcwzxmNOuFXuhLUwhBNbKU1ic4j/e6bKldb5vUpRU5Zfz87ElM1xlNZSpFqf0gj91iqR8T3LevHPR4YB3IPOCeOLAQkjcaIIWVNQhiC9t3bfKTlQ5RmGdI1Rp9OdI7hAJWPTU13+W1oKAAilR3wjUASYzKrwX3/uONJxtSv0OSZ+hfUkLqIyHpuVUrkJIWC7fkLRtxKIryUNYrIrHD+tch9KHl7x39DbYykzCJ5JPzEkgdXigwVTDMynJXA4NQrmYa7WM7okhC84NLyz0vft85ceIyghUjiNW4SF3gEuiEXjRzw+nvfT/uKT1J/GBaSe4tCUTzYx1xo9RqtDBly5lFZlk+Qs=
-  app: secret-tundra-70896
+  app: powerful-falls-94009
   on:
-    repo: gdalporto/MLC
+    repo: gdalporto/ptclient
