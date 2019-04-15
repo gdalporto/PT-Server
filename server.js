@@ -73,6 +73,7 @@ app.get('/conditiondata/', function(req, res){
 // GET A USER AFTER AUTH CHECK
 
 app.get("/protected/user", jwtAuth, (req, res) => {
+  console.log("REQ.HEADERS.ID IS", req.headers.id);
   User.findOne({_id: req.headers.id})
     .then(user => {
         res.json({user: user.serialize()});
@@ -82,7 +83,7 @@ app.get("/protected/user", jwtAuth, (req, res) => {
 
 app.put("/protected/user",jwtAuth,(req,res)=>{ 
   const toUpdate = {};
-  const updateableFields = ["firstName","lastName", "email"];
+  const updateableFields = ["condition"];
   updateableFields.forEach(field => {
       if(field in req.body){
         toUpdate[field] = req.body[field];
